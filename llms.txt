@@ -1,0 +1,11 @@
+# resonant-context-kit
+
+> The context-kit instrument as a ResonantOS local-service add-on: style steering, sandboxed munch reads, and output dieting served hash-pinned over localhost. The canonical KyaniteLabs/context-kit stays the source; the companion notes gift (resonant-context-notes) restates its measured results.
+
+Contents:
+- [README.md](README.md): Tools, honest surface (what runs headless and what is pinned not-runnable), vendor provenance.
+- [server.py](server.py): stdlib-only http-json service, 127.0.0.1, per-method allowlists.
+- [vendor/](vendor/): The kit frozen via git archive at a pinned commit, sha256-manifested.
+- [addon.json](addon.json): ResonantOS 2.0.0-alpha add-on manifest (local-service).
+
+Companion: [resonant-context-notes](https://github.com/simongonzalezdc/resonant-context-notes) — the measured notes. [resonant-gifts](https://github.com/simongonzalezdc/resonant-gifts) indexes the full line.

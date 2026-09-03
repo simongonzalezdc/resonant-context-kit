@@ -11,17 +11,17 @@ model:
   temperature: 0.2
   max_tokens: 4000
 fallback_model:
-  endpoint: http://192.168.1.72:46410/v1/chat/completions
-  model: CRACK-Ornith-Uncensored
-  key_env: ""
+  endpoint: https://api.deepinfra.com/v1/openai/chat/completions
+  model: deepseek-ai/DeepSeek-V4-Flash-0731
+  key_env: CODESITTER_DEEPSEEK_KEY
   temperature: 0.2
-  max_tokens: 4000
+  max_tokens: 8000
 review:
   secrets: "Never commit or echo secrets, tokens, or credentials."
   tests: "Changes to logic ship with tests; tests stay green."
   security: "Flag injection, path traversal, unsafe deserialization, unbounded subprocess."
   privacy: "No home paths, personal data, or UNDISCLOSED org/agent names. Kyanite Labs is the public brand (GitHub org, blog, all MIT licenses) and is permitted."
-  hardening: "Service boundary must keep strict per-method params, bounded bodies, timeout+close hygiene."
+  hardening: "Service boundary must keep strict per-method params, bounded bodies, timeout+close hygiene. Vendored trees stay hash-frozen; honest-surface pins (not-runnable capabilities marked false) must never regress to faked capability."
 severity_vocab: [Critical, Major, Minor, Nit]
 tone: assertive
 tone_fork_override: balanced

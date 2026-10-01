@@ -1,0 +1,5 @@
+Synthetic sandbox notes fixture.
+Context-kit probe notes: prefill pays the bills; style steers verbosity,
+never a budget; read caches validate mtime before every hit.
+(All content synthetic. This non-.py file exists so clients can observe the
+kit's read_symbol rule: .py files only.)
